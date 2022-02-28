@@ -129,8 +129,6 @@ class LinkedList:
             before = temp
             temp = after
 
-
-
     def all(self):
         elements = self.head
         while elements is not None:
