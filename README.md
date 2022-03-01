@@ -1,2 +1,2 @@
 # Data-Structures
-<img src="screenshot/linkedlist.png" width='100%'>
+<img src="https://github.com/anochima/Data-Structures/blob/master/screenshots/linkedlist.png" width='100%'>
