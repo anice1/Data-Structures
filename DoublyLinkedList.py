@@ -1,7 +1,3 @@
-from ast import Index
-from pickle import NONE
-
-
 class Node:
     def __init__(self, value):
         self.value = value
@@ -125,8 +121,3 @@ doubly.all()
 print('=====Reverse=====')
 doubly.reverse()
 print(doubly.all())
-
-# print(doubly.tail.next)
-print('=====Prevs=====')
-print(doubly.head.next.next.next.prev.value)
-# print(doubly.get(2).prev.value)
