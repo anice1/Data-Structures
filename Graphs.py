@@ -46,6 +46,6 @@ graph.edge('A','B')
 graph.edge('C','A')
 graph.edge('C','B')
 
-graph.remove_edge('A','A')
-graph.remove_vertex('A')
+graph.remove_edge('B','C')
+# graph.remove_vertex('A')
 graph.all()
