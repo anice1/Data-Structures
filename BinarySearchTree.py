@@ -48,7 +48,20 @@ class BinarySearchTree:
         while node.left is not None:
             node = node.left
         return node
-            
+
+    def bread_first_search(self):
+        node = self.root
+        queue = []
+        results = []
+        queue.append(node)
+        while len(queue) > 0:
+            node = queue.pop(0)
+            results.append(node.value)
+            if node.left is not None:
+                queue.append(node.left)
+            if node.right is not None:
+                queue.append(node.right)
+        return results            
 
 binary = BinarySearchTree()
 binary.insert(2)
@@ -59,4 +72,5 @@ binary.insert(0)
 # print(binary.root.value)
 # print(binary.root.left.value)
 # print(binary.contains(7))
-print(binary.minimum(binary.root.right).value)
+# print(binary.minimum(binary.root.right).value)
+print(binary.bread_first_search())
